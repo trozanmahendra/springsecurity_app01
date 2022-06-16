@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    password: 12345
+    url: jdbc:mysql://localhost:3306/demodb?createDatabaseIfNotExist=true
+    username: mg
+  main:
+    allow-circular-references: true
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#spring.main.allow-circular-references
