@@ -40,7 +40,7 @@ public class HomeController {
 	}
 	
 	@GetMapping("/profile")
-	@PreAuthorize("hasRole('SUPERADMIN')")
+	@PreAuthorize("hasAnyRole('SUPERADMIN','USER')")
 	public String profile() {
 		return "your profile is here................";
 	}
